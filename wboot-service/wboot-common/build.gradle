@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'top.watilion'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.18'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compileOnly 'io.swagger:swagger-annotations:1.5.20'
+
+}
+
+test {
+    useJUnitPlatform()
+}
