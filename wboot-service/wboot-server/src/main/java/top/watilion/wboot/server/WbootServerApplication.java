@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 
+/**
+ * @author watilion
+ */
 @SpringBootApplication
 @ComponentScan(basePackages = {"top.watilion.wboot"})
 public class WbootServerApplication {

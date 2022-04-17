@@ -1,11 +1,7 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.5'
-    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-    id 'java'
+    alias (libs.plugins.boot)
+    alias (libs.plugins.dm)
 }
-
-group = 'top.watilion'
-version = '0.0.1-SNAPSHOT'
 
 configurations {
     compileOnly {
@@ -13,26 +9,17 @@ configurations {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    implementation 'io.springfox:springfox-swagger2:2.9.2'
-    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+    implementation libs.swagger
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'mysql:mysql-connector-java'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor libs.lombok
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    compile project(':wboot-common')
-    compile project(':wboot-system')
-    compile project(':wboot-base')
+    implementation project(':wboot-common')
+    implementation project(':wboot-system')
+    implementation project(':wboot-base')
 }
 
-test {
-    useJUnitPlatform()
-}

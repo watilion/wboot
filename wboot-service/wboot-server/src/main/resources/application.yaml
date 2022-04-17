@@ -1,2 +1,7 @@
 server:
   port: 8090
+
+token:
+  header: Authorization
+  secret:
+  expireTime: 480

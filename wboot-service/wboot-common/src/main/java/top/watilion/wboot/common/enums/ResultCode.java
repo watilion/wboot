@@ -27,13 +27,22 @@ public enum ResultCode {
      * 用户未登录
      */
     UNAUTHORIZED(401000,false,"用户认证失败（未登录）"),
+    /**
+     * 用户名密码错误
+     */
     NAME_OR_PWD_ERROR(401001,false,"用户名或密码错误"),
+    /**
+     * token 已过期
+     */
     TOKEN_EXPIRED(401002,false,"token已过期"),
     /**
      * 用户未授权
      */
     ACCESS_DENIED(403000,false,"用户无授权,拒绝访问"),
 
+    /**
+     * 用户冻结
+     */
     USER_FROZEN(403001,false,"用户冻结"),
 
     /**
