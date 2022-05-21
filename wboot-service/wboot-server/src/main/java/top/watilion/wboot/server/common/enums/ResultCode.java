@@ -1,4 +1,4 @@
-package top.watilion.wboot.common.enums;
+package top.watilion.wboot.server.common.enums;
 
 /**
  * @author watilion

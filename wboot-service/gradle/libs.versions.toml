@@ -3,6 +3,7 @@ lombok-version = "1.18.22"
 swagger-version = "3.0.0"
 swagger-annotations-version = "1.6.6"
 jupiter-version = "5.8.2"
+mybatis-plus-version = "3.5.1"
 
 [libraries]
 lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok-version" }
@@ -10,10 +11,11 @@ swagger = { group = "io.springfox", name = "springfox-boot-starter", version.ref
 swaggerAnnotations = { group = "io.swagger", name = "swagger-annotations", version.ref = "swagger-annotations-version" }
 jupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "jupiter-version" }
 jupiterEngine = {group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "jupiter-version" }
+mybatisPlus = {group = "com.baomidou", name = "mybatis-plus-boot-starter", version.ref = "mybatis-plus-version" }
 
 [bundles]
 jupiter = ["jupiterApi", "jupiterEngine"]
 
 [plugins]
-boot = { id = "org.springframework.boot", version = "2.5.2" }
+boot = { id = "org.springframework.boot", version = "2.7.0" }
 dm = { id = "io.spring.dependency-management", version = "1.0.11.RELEASE" }

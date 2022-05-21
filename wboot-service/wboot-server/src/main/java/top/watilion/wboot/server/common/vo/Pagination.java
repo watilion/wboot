@@ -1,4 +1,4 @@
-package top.watilion.wboot.common.vo;
+package top.watilion.wboot.server.common.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

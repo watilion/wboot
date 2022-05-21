@@ -1,4 +1,4 @@
-package top.watilion.wboot.common.constant;
+package top.watilion.wboot.server.common.constant;
 
 /**
  * @author watilion

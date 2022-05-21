@@ -53,7 +53,7 @@ public class Swagger2Configuration {
      */
     private Predicate<RequestHandler> getBasePackages() {
         Predicate<RequestHandler> requestHandlerSelector = ApiSelector.DEFAULT.getRequestHandlerSelector();
-        Predicate<RequestHandler> predicates = requestHandlerSelector.and(RequestHandlerSelectors.basePackage("top.watilion.wboot.system.controller"));
+        Predicate<RequestHandler> predicates = requestHandlerSelector.and(RequestHandlerSelectors.basePackage("top.watilion.wboot.server.controller"));
         predicates = predicates.and(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class));
         return predicates;
     }

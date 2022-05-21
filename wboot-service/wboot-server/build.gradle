@@ -12,14 +12,13 @@ configurations {
 dependencies {
     implementation libs.swagger
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation libs.mybatisPlus
     runtimeOnly 'mysql:mysql-connector-java'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor libs.lombok
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    implementation project(':wboot-common')
-    implementation project(':wboot-system')
-    implementation project(':wboot-base')
 }
 

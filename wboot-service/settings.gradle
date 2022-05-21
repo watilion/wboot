@@ -1,7 +1,4 @@
 rootProject.name = 'wboot-service'
-include 'wboot-system'
-include 'wboot-base'
 include 'wboot-server'
-include 'wboot-common'
 
 enableFeaturePreview('VERSION_CATALOGS')

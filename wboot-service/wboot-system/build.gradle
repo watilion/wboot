@@ -1,9 +1,0 @@
-plugins {
-    alias (libs.plugins.boot)
-    alias (libs.plugins.dm)
-}
-
-dependencies {
-    compileOnly 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly project(':wboot-common')
-}

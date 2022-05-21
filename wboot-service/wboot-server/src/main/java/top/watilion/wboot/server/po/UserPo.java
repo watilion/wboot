@@ -1,4 +1,4 @@
-package top.watilion.wboot.system.po;
+package top.watilion.wboot.server.po;
 
 import lombok.Data;
 

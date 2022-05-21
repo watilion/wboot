@@ -1,9 +1,9 @@
-package top.watilion.wboot.common.vo;
+package top.watilion.wboot.server.common.vo;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import top.watilion.wboot.common.enums.ResultCode;
+import top.watilion.wboot.server.common.enums.ResultCode;
 
 /**
  * @author watilion
