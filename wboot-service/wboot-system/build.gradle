@@ -3,7 +3,16 @@ plugins {
     alias (libs.plugins.dm)
 }
 
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
 dependencies {
     compileOnly 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly libs.mybatisPlus
     compileOnly project(':wboot-common')
 }

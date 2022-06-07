@@ -3,25 +3,23 @@ allprojects {
 
     group = 'top.watilion'
     version = '0.0.1-SNAPSHOT'
-    sourceCompatibility = '1.8'
+    sourceCompatibility = '18'
 
     repositories {
         mavenLocal()
         mavenCentral()
     }
+}
 
+subprojects {
     dependencies {
         compileOnly libs.lombok
+        compileOnly libs.springdoc
+        compileOnly libs.swaggerAnnotations
         testImplementation libs.jupiterApi
         testRuntimeOnly libs.jupiterEngine
     }
-
     test {
         useJUnitPlatform()
-    }
-}
-subprojects {
-    dependencies {
-        compileOnly libs.swaggerAnnotations
     }
 }

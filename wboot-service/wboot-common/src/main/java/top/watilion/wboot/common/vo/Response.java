@@ -1,7 +1,6 @@
 package top.watilion.wboot.common.vo;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import top.watilion.wboot.common.enums.ResultCode;
 
@@ -10,24 +9,24 @@ import top.watilion.wboot.common.enums.ResultCode;
  * @date 2021/5/3 00:41
  */
 @Data
-@ApiModel(description = "统一消息返回实体")
+@Schema(description = "统一消息返回实体")
 public class Response<T> {
-    @ApiModelProperty(value = "返回状态编码")
+    @Schema(name = "code", description = "返回状态编码")
     private Integer code;
 
-    @ApiModelProperty(value = "返回状态")
+    @Schema(description = "返回状态")
     private boolean success;
 
-    @ApiModelProperty(value = "返回信息")
+    @Schema(description = "返回信息")
     private String message;
 
-    @ApiModelProperty(value = "时间戳")
+    @Schema(description = "时间戳")
     private long timestamp = System.currentTimeMillis();
 
-    @ApiModelProperty(value = "分页信息")
+    @Schema(description = "分页信息")
     private Pagination pagination;
 
-    @ApiModelProperty(value = "返回数据")
+    @Schema(description = "返回数据")
     private T data;
 
     public Response<T> result(Integer code, boolean success, String message, T data, Pagination pagination) {
